@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* DEBUT CSS */
+
+@font-face {
+    font-family: 'Old Press';
+    src: url("src/Old Press.ttf") format("truetype");
+}
+
+html {
+    background: url("src/images/dance.jpg");
+    background-repeat: no-repeat;
+}
+
+#img_radio {
+    display: flex;
+    width: 1800px;
+    height: 800px;
+    background: url("src/images/2.jpg");
+    margin: 50px;
+}
+
+.deux_block_radio {
+    display: flex;
+}
+
+.img_gauche {
+    width: 320px;
+    height: 380px;
+    margin-left: 235px;
+    margin-top: 160px;
+    border-radius: 4%;
+}
+
+.img_gauche img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.img_droite {
+    display: flex;
+    background: url(src/images/black.jpg);
+    width: 320px;
+    height: 380px;
+    margin-left: 60px;
+    margin-top: 160px;
+    border-radius: 4%;
+}
+
+
+h2 {
+    font-family: "Old Press", serif, sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+h3 {
+    width: 320px;
+    font-family: "Old Press Italic", serif, sans-serif;
+    text-align: end;
+    letter-spacing: 4px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+/*=====================*/
+/* LISTE DES ARTISTES  */
+/*=====================*/
+.artiste_liste {
+    color: rgb(214, 158, 67);
+    font-size: 1.5em;
+}
+
+.artiste_liste li h3 {
+    visibility: hidden;
+    font-family: "Old Press", serif, sans-serif;
+
+}
+
+.js_visible {
+    visibility: visible !important;
+    margin-right: 20px;
+}
+
+
+/*=================*/
+/*   BOUTON RADIO  */
+/*=================*/
+.musique {
+    display: flex;
+    width: auto;
+    height: 250px;
+}
+
+.btn_1 {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+}
+
+.btn_2 {
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    margin-top: 70px;
+}
+
+.btn_3 {
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.btn_4 {
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    margin-top: 66px;
+}
+
+.btn_5 {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-top: 90px;
+}
+
+
+
+/*==================*/
+/* TRAITS VOLUME    */
+/*==================*/
+.trait_1 {
+    width: 4px;
+    height: 250px;
+    background: #a1803d;
+    margin-top: 250px;
+    margin-left: 60px;
+}
+
+.trait_2 {
+    width: 4px;
+    height: 250px;
+    background: #a1803d;
+    margin-top: 250px;
+    margin-left: 10px;
+}
+
+.trait_3 {
+    width: 4px;
+    height: 250px;
+    background: #a1803d;
+    margin-top: 250px;
+    margin-left: 10px;
+}
+
+/*===============================*/
+/* CURSER VOLUME PARTIE COMMUNE  */
+/*===============================*/
+#volume {
+    height: 2em;
+    background: transparent;
+    position: absolute;
+    transform: rotate(270deg);
+    margin-top: 350px;
+    margin-left: -70px;
+}
+
+/*================*/
+/*  CURSER  SON   */
+/*================*/
+
+#volume::-moz-range-thumb {
+    background: url(src/images/btn_1.png) no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/*=====================*/
+/*  TITRE DES CHANSONS */
+/*=====================*/
+
+color#a1803d .js_invisible {
+    visibility: invisible !important;
+}
+
+/*====================*/
+/* GESTION DE LA TV   */
+/*====================*/
+
+.img_gauche {
+    width: 320px;
+    height: 380px;
+    margin-left: 235px;
+    margin-top: 160px;
+    border-radius: 4%;
+}
+
+.img_gauche img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tv {
+    position: absolute;
+    background: url(src/images/3radio.png);
+    width: 990px;
+    height: 720px; 
+    margin-left: 980px;
+    margin-top: 145px;
+}
+
+
+/*règle la position du bouton en plus du css en bas*/
+.fenetre_film {
+    width: 365px;
+    height: 275px;   
+    margin-left: 320px;
+    margin-top: 205px;
+} 
+
+ .redim_video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;    
+    border-radius: 70px 70px 70px 89px; 
+    rotate: 1.7deg;
+} 
+
+
+/*BOUTON TV*/
+.btn_6 {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    margin-left: 568px;
+    margin-top: 54px;
+}
+
+/*====================*/
+/* Animation bouton   */
+/*====================*/
+
+.tooltip {
+    position: relative;
+    /* display: inline-block;
+    border-bottom: 1px dotted rgb(197, 30, 30);*/
+}
+
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 125px;
+    height: 40px;
+    background: url(src/images/fond_1.jpg);
+    font-family: "Old Press", serif, sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-shadow: 3px 2px 2px rgb(214, 158, 67), 0 0 1em, 0 0 0.2em rgb(25, 25, 36);
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0.7;
+    transition: opacity 2s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*=========================*/
+/*  ESPACEMENT DES BULLES  */
+/*=========================*/
+.btn_stop {
+    margin-left: 280px;
+}
+
+.prev {
+    margin-left: 26px;
+}
+
+.btn_pause {
+    margin-left: 110px;
+}
+
+.next {
+    margin-left: 125px;
+}
+
+.btn_relancer {
+    margin-left: 25px;
+}
+
+/*====================*/
+/*    BOUTON VOLUME   */
+/*====================*/
+.barre_progression .tooltiptext {
+    width: 100px;
+    margin-left: -30px;
+    margin-top: 90px;
+}
+
+/*====================*/
+/*    BOUTON VIDEO    */
+/*====================*/
+.bouton_stop_video .tooltiptext {
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+
+/*============++++++++++++========*/
+/*    EEFFETS BOUTONS VIBRATIONS  */
+/*================++++++++++++====*/
+.effet:hover{
+    animation: vibration 0.4s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes vibration{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-2px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 3px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(2px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Projet audio</title>
+</head>
+
+<body>
+    <main>
+        <section id="img_radio">
+            <div class="radio_seule">
+                <!-- BLOCK DROITE ET GAUCHE DE LA RADIO POUR Y METTRE LES IMAGES ET LA LISTE  -->
+                <div class="deux_block_radio">
+                    <div class="img_gauche">
+                        <img src="src/images/ella.jpg" alt="Image de la pochette du cd qui passe">
+                    </div>
+                    <div class="trait_1"></div>
+                    <div class="barre_progression tooltip">
+                        <input id="volume" type="range" min="0" max="100"></input>
+                        <span class="tooltiptext">Volume</span>
+                    </div>
+                    <div class="trait_2"></div>
+                    <div class="trait_3"></div>
+                    <div class="img_droite">
+                        <div class="ul_gauche">
+                            <ul class="artiste_liste">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- BLOCK DROITE ET GAUCHE DE LA RADIO POUR Y METTRE LES IMAGES ET LA LISTE -->
+
+                <!--BLOCK DU BAS DE LA RADIO QUI CONTIENT LES BOUTONS-->           
+                <div class="block_bouton">
+                    <div class="musique">
+                        <!-- BOUTON STOP -->
+                        <div class="btn_stop tooltip ">
+                            <img src="src/images/btn_1.png" class="btn_1 effet" alt="Vieux bouton pour stop"> 
+                            <!-- PERMET DE FAIRE APPARAITE LA LEGENDE DU BOUTON -->
+                            <span class="tooltiptext">Stop</span>
+                        </div>
+                        <!-- FIN BOUTON STOP -->
+
+
+                        <!-- BOUTON RECUL -->
+                        <div class="prev tooltip">
+                            <img src="src/images/btn_2_.png" class="btn_2 effet img" alt="Vieux bouton pour recul ">
+                            <!-- PERMET DE FAIRE APPARAITE LA LEGENDE DU BOUTON -->
+                            <span class="tooltiptext">Recul</span>
+                        </div>
+                        <!-- FIN BOUTON RECUL -->
+
+
+                        <!-- BOUTON PAUSE -->
+                        <div class="btn_pause tooltip">
+                            <img src="src/images/btn_3.png" class="btn_3 effet" alt="Vieux bouton pour faire pause">
+                            <!-- PERMET DE FAIRE APPARAITE LA LEGENDE DU BOUTON -->
+                            <span class="tooltiptext">Pause</span>
+                        </div>
+                        <!-- FIN BOUTON PAUSE -->
+
+
+                        <!-- BOUTON AVANCE -->
+                        <div class="next tooltip">
+                            <img src="src/images/btn_4.png" class="btn_4 effet" alt="Vieux bouton pour avance">
+                            <!-- PERMET DE FAIRE APPARAITE LA LEGENDE DU BOUTON -->
+                            <span class="tooltiptext">Avance</span>
+                        </div>
+                        <!-- FIN BOUTON AVANCE -->
+
+                        <!-- BOUTON RELANCE -->
+                        <div class="btn_relancer tooltip">
+                            <img src="src/images/btn_2.png" class="btn_5 effet" alt="Vieux bouton pour relancer">
+                            <!-- PERMET DE FAIRE APPARAITE LA LEGENDE DU BOUTON -->
+                            <span class="tooltiptext">Relance</span>
+                        </div>
+                        <!-- FIN BOUTON RELANCE -->
+
+                    </div>
+                </div>
+                <!--FIN BLOCK DU BAS DE LA RADIO QUI CONTIENT LES BOUTONS-->
+            </div>
+
+            <!-- BALISE AUDIO  -->
+    
+            <audio src="" id="audio" loop>
+                Votre navigateur ne supporte pas la balise audio.
+            </audio>
+
+
+            <!-- BLOCK DROITE QUI CONTIENT LA TV  -->
+
+            <div class="tv">
+                <div class="fenetre_film">
+                    <!-- BALISE VIDEO  -->
+                    <video src=""class="redim_video" loop></video>  
+                </div>
+
+                <div class="bouton_stop_video tooltip">
+                    <img src="src/images/bouton_6.png" class="btn_6 effet" alt="Vieux bouton pour stopper la vidéo">
+                    <!-- PERMET DE FAIRE APPARAITE LA LEGENDE DU BOUTON -->
+                    <span class="tooltiptext stop">Stop vidéo</span>              
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
